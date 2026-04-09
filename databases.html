@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Databases Enhancement</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f6fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 14px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    h1, h2 {
+      color: #1f3c88;
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .box {
+      background: #f3f6fc;
+      border-left: 5px solid #1f3c88;
+      padding: 18px;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    a {
+      color: #1f3c88;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .back {
+      margin-top: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Databases Enhancement</h1>
+
+    <div class="section">
+      <h2>Artifact Description</h2>
+      <p>
+        The artifact I selected for this enhancement is my Daily Weight Tracker Android application.
+        The app uses SQLite to support user accounts, goal tracking, and daily weight records.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Enhancement Summary</h2>
+      <div class="box">
+        <ul>
+          <li>Separated database access into repository classes</li>
+          <li>Organized users, goals, and weight records into clearer responsibilities</li>
+          <li>Centralized schema names in a contract class</li>
+          <li>Enabled foreign key constraints and strengthened data integrity</li>
+          <li>Added an index and duplicate-entry protection</li>
+          <li>Improved security by hashing passwords before storage</li>
+          <li>Moved session-related logic into a session manager</li>
+          <li>Added database-driven summary support to the progress screen</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Why the Changes Matter</h2>
+      <p>
+        This enhancement made the app more organized, more professional, and more secure. It also helped
+        me better understand that database work is not only about storing and retrieving records. It is
+        also about designing the structure around the data so the rest of the application is easier to
+        maintain and more reliable over time.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Supporting Files</h2>
+      <div class="box">
+        <p><a href="files/databases-narrative.pdf" target="_blank">View Narrative PDF</a></p>
+        <p><a href="https://github.com/reisophie/CS499-ePortfolio/tree/main/files/enhanced-weight-app" target="_blank">Review the Enhanced Code on GitHub</a></p>
+        <p><a href="files/enhanced-weight-app.zip" target="_blank">Download Enhanced Project ZIP</a></p>
+      </div>
+    </div>
+
+    <div class="back">
+      <p><a href="index.html">Back to Home</a></p>
+    </div>
+  </div>
+</body>
+</html>
