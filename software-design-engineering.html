@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Software Design and Engineering Enhancement</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f6fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 14px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    h1, h2 {
+      color: #1f3c88;
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .box {
+      background: #f3f6fc;
+      border-left: 5px solid #1f3c88;
+      padding: 18px;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    a {
+      color: #1f3c88;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .back {
+      margin-top: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Software Design and Engineering Enhancement</h1>
+
+    <div class="section">
+      <h2>Artifact Description</h2>
+      <p>
+        The artifact I selected for this category is my CS 360 Daily Weight Tracker Android application.
+        The app allows users to create a login, enter daily weight data, store progress, set a goal
+        weight, and optionally receive SMS notifications when a goal is reached.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Enhancement Summary</h2>
+      <div class="box">
+        <ul>
+          <li>Reduced repeated logic inside the activity classes</li>
+          <li>Created a reusable ValidationUtils class</li>
+          <li>Centralized validation for usernames, passwords, dates, weights, and phone numbers</li>
+          <li>Improved project organization and structure</li>
+          <li>Cleaned up parts of the app to make it easier to maintain</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Why the Changes Matter</h2>
+      <p>
+        This enhancement helped improve separation of concerns and made the application more organized,
+        readable, and maintainable. Instead of keeping validation and repeated logic scattered across
+        different screens, I moved key responsibilities into reusable supporting code. These changes
+        made the project stronger from a software engineering perspective and better reflect my current
+        understanding of maintainability and code structure.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Supporting Files</h2>
+      <div class="box">
+        <p><a href="files/software-design-narrative.pdf" target="_blank">View Narrative PDF</a></p>
+        <p><a href="https://github.com/reisophie/CS499-ePortfolio/tree/main/files/enhanced-weight-app" target="_blank">Review the Enhanced Code on GitHub</a></p>
+        <p><a href="files/enhanced-weight-app.zip" target="_blank">Download Enhanced Project ZIP</a></p>
+      </div>
+    </div>
+
+    <div class="back">
+      <p><a href="index.html">Back to Home</a></p>
+    </div>
+  </div>
+</body>
+</html>
