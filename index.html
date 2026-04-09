@@ -1,63 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sophia Reinersman ePortfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 40px;
-      background: #f8f9fb;
+      margin: 0;
+      background: #f4f6fb;
       color: #222;
       line-height: 1.6;
     }
+
     .container {
-      max-width: 900px;
-      margin: auto;
+      max-width: 1000px;
+      margin: 40px auto;
       background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      padding: 40px;
+      border-radius: 14px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
     }
-    h1, h2 {
+
+    h1, h2, h3 {
       color: #1f3c88;
+      margin-top: 0;
     }
+
+    p {
+      margin-bottom: 16px;
+    }
+
+    .intro {
+      margin-bottom: 30px;
+    }
+
+    .section {
+      margin-top: 35px;
+    }
+
+    .card {
+      margin-bottom: 20px;
+      padding: 20px;
+      background: #f3f6fc;
+      border-left: 5px solid #1f3c88;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #1f3c88;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     ul {
       padding-left: 20px;
     }
-    .artifact {
-      margin-bottom: 20px;
-      padding: 15px;
-      background: #f3f6fc;
-      border-left: 4px solid #1f3c88;
-      border-radius: 8px;
+
+    .footer {
+      margin-top: 40px;
+      font-size: 0.95em;
+      color: #555;
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Sophia Reinersman ePortfolio</h1>
-    <p>Welcome to my CS 499 ePortfolio. This site highlights my academic work, technical growth, and planned enhancements for my computer science artifacts.</p>
 
-    <h2>About Me</h2>
-    <p>I am a computer science student interested in using technology to improve systems, automate processes, and support more efficient business operations.</p>
-
-    <h2>Artifacts</h2>
-
-    <div class="artifact">
-      <h3>CS 360 Final Project</h3>
-      <p>Mobile weight tracking application used for software design and engineering.</p>
+    <div class="intro">
+      <p>
+        Welcome to my CS 499 Computer Science Capstone ePortfolio. This portfolio highlights my
+        growth throughout the Computer Science program and shows how I improved one artifact across
+        three core areas of computer science: software design and engineering, algorithms and data
+        structures, and databases.
+      </p>
     </div>
 
-    <div class="artifact">
-      <h3>CS 320 Final Project</h3>
-      <p>Software testing and quality assurance project used for algorithms and data structures.</p>
+    <div class="section">
+      <h2>About Me</h2>
+      <p>
+        I am a computer science student interested in improving systems, strengthening software quality,
+        and building solutions that are practical, organized, and dependable. Through this program,
+        I have developed experience in software design, structured problem-solving, database work,
+        and improving existing applications through thoughtful enhancement.
+      </p>
     </div>
 
-    <div class="artifact">
-      <h3>CS 340 Final Project</h3>
-      <p>MongoDB dashboard and CRUD project used for databases.</p>
+    <div class="section">
+      <h2>Portfolio Overview</h2>
+      <p>
+        For this capstone, I chose to use my <strong>CS 360 Daily Weight Tracker</strong> application
+        as the main artifact for all three enhancement categories. I selected one artifact instead of
+        several unrelated projects because it gave me the best opportunity to show connected,
+        meaningful improvement across the course. This also made my portfolio easier to follow because
+        each enhancement builds on the same project.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Artifacts and Narratives</h2>
+
+      <div class="card">
+        <h3>Code Review</h3>
+        <p>
+          My code review examines the original Daily Weight Tracker application and identifies areas
+          for improvement in software design, algorithms and data structures, and databases.
+        </p>
+        <p><a href="code-review.html">View Code Review</a></p>
+      </div>
+
+      <div class="card">
+        <h3>Software Design and Engineering Enhancement</h3>
+        <p>
+          This enhancement focused on improving separation of concerns, reducing repeated logic,
+          centralizing validation, and making the application easier to maintain.
+        </p>
+        <p><a href="software-design-engineering.html">View Software Design and Engineering Enhancement</a></p>
+      </div>
+
+      <div class="card">
+        <h3>Algorithms and Data Structures Enhancement</h3>
+        <p>
+          This enhancement focused on improving validation, sorting, structured data handling, and
+          progress-related calculations within the application.
+        </p>
+        <p><a href="algorithms-data-structures.html">View Algorithms and Data Structures Enhancement</a></p>
+      </div>
+
+      <div class="card">
+        <h3>Databases Enhancement</h3>
+        <p>
+          This enhancement focused on improving database organization, repository-based data access,
+          data integrity, and security through stronger user-data handling.
+        </p>
+        <p><a href="databases.html">View Databases Enhancement</a></p>
+      </div>
+
+      <div class="card">
+        <h3>Professional Self-Assessment</h3>
+        <p>
+          My professional self-assessment reflects on my growth throughout the Computer Science
+          program, the skills I developed, and how this portfolio demonstrates the program outcomes.
+        </p>
+        <p><a href="self-assessment.html">View Professional Self-Assessment</a></p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Featured Artifact</h2>
+      <p><strong>Artifact:</strong> CS 360 Daily Weight Tracker</p>
+      <p><strong>Platform:</strong> Android / Java / SQLite</p>
+      <p>
+        This application allows users to create an account, log in, record daily weight entries,
+        set a goal weight, and optionally receive SMS notifications when the goal is reached.
+      </p>
+    </div>
+
+    <div class="footer">
+      <p><strong>Student:</strong> Sophia Reinersman</p>
+      <p><strong>Program:</strong> BS in Computer Science, SNHU</p>
     </div>
   </div>
 </body>
