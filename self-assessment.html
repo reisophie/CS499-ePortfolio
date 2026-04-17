@@ -8,26 +8,83 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: #f4f6fb;
+      background: linear-gradient(to bottom, #eef2fb, #f7f9fd);
       color: #222;
       line-height: 1.7;
     }
 
     .container {
-      max-width: 950px;
+      max-width: 1000px;
       margin: 40px auto;
       background: white;
-      padding: 40px;
-      border-radius: 14px;
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+      padding: 45px;
+      border-radius: 16px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
     }
 
-    h1, h2 {
+    .hero {
+      background: #f3f6fc;
+      border-left: 6px solid #1f3c88;
+      padding: 24px;
+      border-radius: 12px;
+      margin-bottom: 35px;
+    }
+
+    .hero h1 {
+      margin: 0 0 10px 0;
       color: #1f3c88;
+      font-size: 2.1rem;
+    }
+
+    .hero p {
+      margin: 0;
+      font-size: 1.05rem;
+      color: #333;
+    }
+
+    .section {
+      margin-top: 35px;
+      padding: 24px;
+      background: #fafbfe;
+      border: 1px solid #e3e8f4;
+      border-radius: 12px;
+    }
+
+    h2 {
+      color: #1f3c88;
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 1.35rem;
     }
 
     p {
-      margin-bottom: 18px;
+      margin-bottom: 16px;
+    }
+
+    .strengths {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 18px;
+    }
+
+    .strength-card {
+      background: #f3f6fc;
+      border-radius: 10px;
+      padding: 16px;
+      border-top: 4px solid #1f3c88;
+    }
+
+    .strength-card h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: #1f3c88;
+      font-size: 1rem;
+    }
+
+    .strength-card p {
+      margin: 0;
+      font-size: 0.95rem;
     }
 
     a {
@@ -41,86 +98,155 @@
     }
 
     .back {
-      margin-top: 30px;
+      margin-top: 35px;
+      text-align: center;
+    }
+
+    .back a {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #1f3c88;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .back a:hover {
+      background: #17306d;
+      text-decoration: none;
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        margin: 20px;
+        padding: 25px;
+      }
+
+      .hero h1 {
+        font-size: 1.7rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Professional Self-Assessment</h1>
+    <div class="hero">
+      <h1>Professional Self-Assessment</h1>
+      <p>
+        This self-assessment reflects my growth throughout the Computer Science program and the skills I
+        developed through my coursework and capstone experience.
+      </p>
+    </div>
 
-    <p>
-      Completing the Computer Science program and building this ePortfolio has helped me see how much I
-      have grown, not only in writing code, but also in how I think about software quality,
-      organization, and long-term improvement. Earlier in the program, I was mainly focused on making
-      projects function correctly. As I moved through my coursework, I became better at looking at a
-      project more critically and asking whether the design made sense, whether the data was handled
-      well, and whether the solution would still be maintainable later. This capstone gave me the
-      chance to revisit earlier work and improve it with a more professional mindset.
-    </p>
+    <div class="section">
+      <h2>Growth Throughout the Program</h2>
+      <p>
+        Completing the Computer Science program and building this ePortfolio has helped me see how much I
+        have grown, not only in writing code, but also in how I think about software quality,
+        organization, and long-term improvement. Earlier in the program, I was mainly focused on making
+        projects function correctly. As I moved through my coursework, I became better at looking at a
+        project more critically and asking whether the design made sense, whether the data was handled
+        well, and whether the solution would still be maintainable later. This capstone gave me the
+        chance to revisit earlier work and improve it with a more professional mindset.
+      </p>
 
-    <p>
-      One of the most important things I gained through the program was a better understanding of how
-      the major areas of computer science connect. In this portfolio, I used one artifact, my CS 360
-      Daily Weight Tracker application, across software design and engineering, algorithms and data
-      structures, and databases. That choice helped me show that these areas are not separate in real
-      development. A user-facing application depends on design decisions, structured logic, and reliable
-      data handling all at once. Working through each enhancement made me more confident in my ability
-      to evaluate an existing system, identify weaknesses, and improve it in a meaningful way.
-    </p>
+      <p>
+        One of the most important things I gained through the program was a better understanding of how
+        the major areas of computer science connect. In this portfolio, I used one artifact, my CS 360
+        Daily Weight Tracker application, across software design and engineering, algorithms and data
+        structures, and databases. That choice helped me show that these areas are not separate in real
+        development. A user-facing application depends on design decisions, structured logic, and reliable
+        data handling all at once. Working through each enhancement made me more confident in my ability
+        to evaluate an existing system, identify weaknesses, and improve it in a meaningful way.
+      </p>
+    </div>
 
-    <p>
-      Throughout the program, I also strengthened my ability to communicate technical work more clearly.
-      That includes writing narratives, explaining design decisions, reflecting on trade-offs, and
-      presenting my work in a way that is understandable to different audiences. I learned that strong
-      communication matters just as much as technical ability because software development is rarely
-      done in isolation. Developers need to explain ideas, justify decisions, and communicate progress
-      clearly.
-    </p>
+    <div class="section">
+      <h2>Communication and Collaboration</h2>
+      <p>
+        Throughout the program, I also strengthened my ability to communicate technical work more clearly.
+        That includes writing narratives, explaining design decisions, reflecting on trade-offs, and
+        presenting my work in a way that is understandable to different audiences. I learned that strong
+        communication matters just as much as technical ability because software development is rarely
+        done in isolation. Developers need to explain ideas, justify decisions, and communicate progress
+        clearly.
+      </p>
 
-    <p>
-      This program also helped me better understand collaboration and stakeholder needs. Even when a
-      class project is completed individually, there is still an expectation that the work solves a
-      problem, meets requirements, and reflects user needs. In my weight-tracking app, I had to think
-      about how a user would interact with the application, how validation should guide the experience,
-      and how the structure of the code would affect future improvements. That mindset connects directly
-      to working with stakeholders in professional environments, where a successful solution has to
-      balance technical choices with practical needs.
-    </p>
+      <p>
+        This program also helped me better understand collaboration and stakeholder needs. Even when a
+        class project is completed individually, there is still an expectation that the work solves a
+        problem, meets requirements, and reflects user needs. In my weight-tracking app, I had to think
+        about how a user would interact with the application, how validation should guide the experience,
+        and how the structure of the code would affect future improvements. That mindset connects directly
+        to working with stakeholders in professional environments, where a successful solution has to
+        balance technical choices with practical needs.
+      </p>
+    </div>
 
-    <p>
-      Another area of growth for me has been security and dependability. As I moved through the program,
-      I became more interested in cybersecurity and more aware that security should not be treated as an
-      afterthought. In this portfolio, that growth is visible in the way I improved validation, reduced
-      weak data handling, and replaced plain-text password storage with hashed values in the database
-      enhancement. Even though this was still a class project, making those improvements showed that I
-      am thinking more carefully about privacy, reliability, and the risks that come from poor design
-      decisions.
-    </p>
+    <div class="section">
+      <h2>Security and Dependability</h2>
+      <p>
+        Another area of growth for me has been security and dependability. As I moved through the program,
+        I became more interested in cybersecurity and more aware that security should not be treated as an
+        afterthought. In this portfolio, that growth is visible in the way I improved validation, reduced
+        weak data handling, and replaced plain-text password storage with hashed values in the database
+        enhancement. Even though this was still a class project, making those improvements showed that I
+        am thinking more carefully about privacy, reliability, and the risks that come from poor design
+        decisions.
+      </p>
+    </div>
 
-    <p>
-      This ePortfolio demonstrates how I have met the program outcomes. I have shown that I can use
-      collaborative and communication strategies by presenting a code review, written narratives, and a
-      professional portfolio that explains my work clearly. I have shown that I can design and evaluate
-      computing solutions by improving an existing application through better structure, validation,
-      logic, and data organization. I have shown that I can use appropriate tools and techniques to
-      create practical computing solutions, including Java, Android Studio, SQLite, RecyclerView-based
-      interfaces, helper classes, repositories, and session management. Finally, I have shown a
-      stronger security mindset by improving validation, strengthening data integrity, and making better
-      decisions around password storage and user-session handling.
-    </p>
+    <div class="section">
+      <h2>Program Outcomes and Strengths</h2>
+      <p>
+        This ePortfolio demonstrates how I have met the program outcomes. I have shown that I can use
+        collaborative and communication strategies by presenting a code review, written narratives, and a
+        professional portfolio that explains my work clearly. I have shown that I can design and evaluate
+        computing solutions by improving an existing application through better structure, validation,
+        logic, and data organization. I have shown that I can use appropriate tools and techniques to
+        create practical computing solutions, including Java, Android Studio, SQLite, RecyclerView-based
+        interfaces, helper classes, repositories, and session management. Finally, I have shown a
+        stronger security mindset by improving validation, strengthening data integrity, and making better
+        decisions around password storage and user-session handling.
+      </p>
 
-    <p>
-      Overall, this capstone reflects my growth as a computer science student and the direction I want
-      to continue developing professionally. I am especially interested in roles that involve improving
-      systems, supporting operations, and making technology more reliable and secure. This portfolio is
-      important to me because it shows more than finished assignments. It shows that I can evaluate my
-      own work, respond to weaknesses, and make thoughtful improvements that better reflect my current
-      skills.
-    </p>
+      <div class="strengths">
+        <div class="strength-card">
+          <h3>Software Design</h3>
+          <p>Improved project organization, validation, and maintainability across the app.</p>
+        </div>
+
+        <div class="strength-card">
+          <h3>Algorithms and Data Handling</h3>
+          <p>Strengthened validation, sorting, and progress-based logic using structured data.</p>
+        </div>
+
+        <div class="strength-card">
+          <h3>Database Development</h3>
+          <p>Improved data access, integrity, and security through repositories and stronger schema design.</p>
+        </div>
+
+        <div class="strength-card">
+          <h3>Professional Growth</h3>
+          <p>Developed stronger communication, reflection, and problem-solving skills throughout the program.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Looking Ahead</h2>
+      <p>
+        Overall, this capstone reflects my growth as a computer science student and the direction I want
+        to continue developing professionally. I am especially interested in roles that involve improving
+        systems, supporting operations, and making technology more reliable and secure. This portfolio is
+        important to me because it shows more than finished assignments. It shows that I can evaluate my
+        own work, respond to weaknesses, and make thoughtful improvements that better reflect my current
+        skills.
+      </p>
+    </div>
 
     <div class="back">
-      <p><a href="index.html">Back to Home</a></p>
+      <a href="index.html">Back to Home</a>
     </div>
   </div>
 </body>
