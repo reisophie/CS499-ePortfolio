@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvNotifTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SMS Notifications"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvNotifInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="If you allow SMS, the app can send you a message when you hit your goal weight. If you deny it, the app still works — you just won’t get texts."
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/tvNotifTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardExample"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="14dp"
+        app:layout_constraintTop_toBottomOf="@id/tvNotifInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Example text:"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvExampleMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="🎉 You hit your goal! New weigh-in: 165.0 lbs. Keep going!"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Phone number input (FIXED: hint belongs on TextInputLayout, not EditText) -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Phone number for goal texts"
+        app:helperText="Example: 5551234567"
+        app:layout_constraintTop_toBottomOf="@id/cardExample"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRequestPermission"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Enable SMS Notifications"
+        app:layout_constraintTop_toBottomOf="@id/tilPhone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNotNow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Not Now"
+        android:backgroundTint="@android:color/transparent"
+        app:strokeWidth="2dp"
+        app:layout_constraintTop_toBottomOf="@id/btnRequestPermission"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvPermissionStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Status: Not set"
+        android:textSize="13sp"
+        app:layout_constraintTop_toBottomOf="@id/btnNotNow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBackToProgress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Back to Progress"
+        app:layout_constraintTop_toBottomOf="@id/tvPermissionStatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
